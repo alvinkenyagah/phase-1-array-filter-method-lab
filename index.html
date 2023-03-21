@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Iterators Filter Lab</title>
-  <meta name="author" content="Flatiron School">
-</head>
-<body>
-  hello
-  <script type="text/javascript" src="index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Iterators Filter Lab</title>
+    <meta name="author" content="Flatiron School" />
+    <style>
+      #THEME {
+        background-color: white;
+        color: black;
+      }
+
+      p, h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body id="THEME">
+    <h1>WELCOME</h1>
+    <p id="tweet"></p>
+
+    <button onclick="dark()">THEME</button>
+    <script type="text/javascript" src="index.js"></script>
+    <script>
+      function dark() {
+        let dark = document.querySelector("#THEME");
+
+        if(dark.style.backgroundColor==='black' && dark.style.color==='white'){
+
+          dark.style.backgroundColor='white'; dark.style.color='black';
+
+        }else{
+
+          dark.style.backgroundColor='black'; dark.style.color='white';
+        }
+
+        tweet.innerHTML = "oops!";
+      
+      }
+    </script>
+  </body>
 </html>
